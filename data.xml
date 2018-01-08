@@ -1,0 +1,159 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Beer>
+    <New ID = "b1">
+        <Name>Bud</Name>
+        <Type>dark</Type>
+        <Al>true</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>50</water>
+            <malt>25</malt>
+            <hops>30</hops>
+            <sugar>100</sugar>
+            <supplements>10</supplements>
+        </Ingredients>
+        <Chars>
+            <turns>10.0%</turns>
+            <transparency>01.5%</transparency>
+            <filtered>true</filtered>
+            <nutritional>565 kcal</nutritional>
+            <spill>
+                <container material="metallic">1.5</container>
+                <container material="wooden">2</container>
+            </spill>
+        </Chars>
+    </New>
+    <New ID = "o2">
+        <Name>Obolon</Name>
+        <Type>dark</Type>
+        <Al>false</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>50</water>
+            <malt>25</malt>
+            <hops>30</hops>
+            <supplements>10</supplements>
+        </Ingredients>
+        <Chars>
+            <transparency>20%</transparency>
+            <filtered>true</filtered>
+            <nutritional>48 kcal</nutritional>
+            <spill></spill>
+        </Chars>
+    </New>
+    <New ID = "m3">
+        <Name>Minskoe</Name>
+        <Type>camp</Type>
+        <Al>true</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>80</water>
+            <malt>95</malt>
+            <hops>70</hops>
+            <sugar>30</sugar>
+            <supplements>80</supplements>
+        </Ingredients>
+        <Chars>
+            <turns>20.0%</turns>
+            <transparency>5.5%</transparency>
+            <filtered>true</filtered>
+            <nutritional>1000 kcal</nutritional>
+            <spill>
+                <container material="polymeric">2.5</container>
+                <container material="textile">1.25</container>
+            </spill>
+        </Chars>
+    </New>
+    <New ID = "m4">
+        <Name>Minskoe</Name>
+        <Type>camp</Type>
+        <Al>true</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>80</water>
+            <malt>95</malt>
+            <hops>70</hops>
+            <sugar>30</sugar>
+            <supplements>80</supplements>
+        </Ingredients>
+        <Chars>
+            <turns>20.0%</turns>
+            <transparency>5.5%</transparency>
+            <filtered>true</filtered>
+            <nutritional>1100 kcal</nutritional>
+            <spill>
+                <container material="polymeric">2.5</container>
+                <container material="textile">1.25</container>
+            </spill>
+        </Chars>
+    </New>
+    <New ID = "m5">
+        <Name>Minskoe</Name>
+        <Type>camp</Type>
+        <Al>true</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>80</water>
+            <malt>95</malt>
+            <hops>70</hops>
+            <sugar>30</sugar>
+            <supplements>80</supplements>
+        </Ingredients>
+        <Chars>
+            <turns>20.0%</turns>
+            <transparency>5.5%</transparency>
+            <filtered>true</filtered>
+            <nutritional>1005 kcal</nutritional>
+            <spill>
+                <container material="polymeric">2.5</container>
+                <container material="textile">1.25</container>
+            </spill>
+        </Chars>
+    </New>
+    <New ID = "m6">
+        <Name>Minskoe</Name>
+        <Type>camp</Type>
+        <Al>true</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>80</water>
+            <malt>95</malt>
+            <hops>70</hops>
+            <sugar>30</sugar>
+            <supplements>80</supplements>
+        </Ingredients>
+        <Chars>
+            <turns>20.0%</turns>
+            <transparency>5.5%</transparency>
+            <filtered>true</filtered>
+            <nutritional>1010 kcal</nutritional>
+            <spill>
+                <container material="polymeric">2.5</container>
+                <container material="textile">1.25</container>
+            </spill>
+        </Chars>
+    </New>
+    <New ID = "m7">
+        <Name>Minskoe</Name>
+        <Type>camp</Type>
+        <Al>true</Al>
+        <Manufacture>Kingdom</Manufacture>
+        <Ingredients>
+            <water>80</water>
+            <malt>95</malt>
+            <hops>70</hops>
+            <sugar>30</sugar>
+            <supplements>80</supplements>
+        </Ingredients>
+        <Chars>
+            <turns>20.0%</turns>
+            <transparency>5.5%</transparency>
+            <filtered>true</filtered>
+            <nutritional>1001 kcal</nutritional>
+            <spill>
+                <container material="polymeric">2.5</container>
+                <container material="textile">1.25</container>
+            </spill>
+        </Chars>
+    </New>
+</Beer>

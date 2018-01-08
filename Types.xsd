@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="types">
+    <!-- Auxiliary types-->
+
+    <xs:simpleType name="tareType">
+        <xs:restriction base="xs:double">
+            <xs:minInclusive value="0.25"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="percentsType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{1,2}(.[0-9])?%"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="amountType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

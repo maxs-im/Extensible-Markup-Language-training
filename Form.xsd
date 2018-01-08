@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:types = "types">
+
+    <xs:import namespace="types" schemaLocation="Types.xsd"/>
+
+    <xs:element name="Beer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="New" type="beerType"
+                            maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="beerType">
+        <xs:sequence>
+            <xs:element name="Name"
+                        type="xs:string"/>
+            <xs:element name="Type"
+                        type="typeType"/>
+            <xs:element name="Al" type="xs:boolean"/>
+            <xs:element name="Manufacture"
+                        type="xs:string"/>
+            <xs:element name="Ingredients"
+                        type="ingredientsType"/>
+            <xs:element name="Chars"
+                        type="charsType"/>
+        </xs:sequence>
+        <xs:attribute name="ID" type="xs:ID"/>
+    </xs:complexType>
+
+    <xs:simpleType name="typeType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="dark|bright|camp|alive"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="ingredientsType">
+        <xs:sequence>
+            <xs:element name="water" type="types:amountType"/>
+            <xs:element name="malt" type="types:amountType"/>
+            <xs:element name="hops" type="types:amountType"/>
+            <xs:element name="sugar" type="types:amountType"
+                        minOccurs="0"/>
+            <xs:element name="supplements" type="types:amountType"
+                        minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="charsType">
+        <xs:sequence>
+            <xs:element name="turns" type="types:percentsType"
+                        minOccurs="0"/>
+            <xs:element name="transparency" type="types:percentsType"/>
+            <xs:element name="filtered" type="xs:boolean"/>
+            <xs:element name="nutritional">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([0-9])* kcal"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="spill">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="container"
+                                    minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="types:tareType">
+                                        <xs:attribute name="material">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="wooden"/>
+                                                    <xs:enumeration value="polymeric"/>
+                                                    <xs:enumeration value="metallic"/>
+                                                    <xs:enumeration value="textile"/>
+                                                    <xs:enumeration value="cardboard"/>
+                                                    <xs:enumeration value="own"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
